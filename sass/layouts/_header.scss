@@ -27,7 +27,21 @@ header {
     color: var(--accent-color);
     font-family: 'Raleway', sans-serif;
 
-    @include font (700, 26px, 1.2, null);
+    // @include font (700, 26px, 1.2, null);
+
+    @media screen and (min-width: 480px) {
+        @include font (700, 24px, 1.17, null);
+
+    }
+
+    @media screen and (min-width: 768px) {
+
+    }
+    
+    @media screen and (min-width: 1200px) {
+        @include font (700, 26px, 1.2, null);
+    }
+    
 
 }
 
@@ -35,15 +49,35 @@ header {
 .main-nav__logo {
     color: var(--black-logo);
 
-    padding-top: 25px;
-    padding-bottom: 25px;
-    margin-right: 93px;
+
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover {
         color: var(--accent-color);
     }
+
+    // padding-top: 25px;
+    // padding-bottom: 25px;
+    // margin-right: 93px;
+
+                @media screen and (min-width: 480px) {
+
+                    padding-top: 16px;
+                    padding-bottom: 16px;
+                }
+        
+                @media screen and (min-width: 768px) {
+                    padding-top: 26px;
+                    padding-bottom: 26px;
+                    margin-right: 87px;
+                }
+        
+                @media screen and (min-width: 1200px) {
+                    padding-top: 24px;
+                    padding-bottom: 25px;
+                    margin-right: 93px;
+                }
 }
 
 
