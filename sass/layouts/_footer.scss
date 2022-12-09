@@ -1,0 +1,135 @@
+.footer {
+
+    background-color: var(--primary-bgc);
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+    }
+}
+
+.footer-list {
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.two-footer {
+    display: flex;
+
+}
+
+.footer-logo {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.studio {
+    color: var(--white-text);
+    font-family: 'Raleway';
+
+    @include font(700, 26px, 1.19, null);
+
+
+}
+
+.address {
+    font-style: normal;
+
+}
+
+.address-text {
+    display: block;
+    margin-bottom: 9px;
+    width: 231px;
+
+    color: var(--white-text);
+
+    @include font(null, 14px, 1.71, null);
+
+}
+
+.footer-mail {
+    display: block;
+    margin-bottom: 9px;
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+
+
+.footer-tel {
+    display: block;
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+
+.footer-tel,
+.footer-mail {
+    color: var(--address-text);
+
+    @include font(null, 14px, 1.71, null);
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.footer-title {
+    margin-bottom: 20px;
+    color: var(--white-text);
+
+    @include font(700, 14px, 1.14, null);
+
+    text-transform: uppercase;
+}
+
+.add-footer {
+    margin-left: 70px;
+
+}
+
+.list-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    margin-right: 93px;
+}
+
+.item-soc-footer {
+    width: 44px;
+    height: 44px;
+
+}
+
+.link-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bgd-icon-footer);
+    border-radius: 50%;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+    }
+}
+
+.icon-footer {
+    fill: var(--white-text);
+}

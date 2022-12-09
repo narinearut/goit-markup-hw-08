@@ -1,0 +1,35 @@
+.hero,
+.hero__title {
+
+    color: var(--white-text);
+
+    @include font(900, 44px, 1.36, 0.06em);
+
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.hero__title {
+    margin-bottom: 30px;
+    margin-left: auto;
+
+    margin-right: auto;
+
+    width: 696px;
+}
+
+.hero {
+    max-width: 1600px;
+    height: 600px;
+    left: 0px;
+    right: 0px;
+    background-color: var(--primary-bgc);
+    margin-left: auto;
+    margin-right: auto;
+
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/bgc-main.jpg);
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+

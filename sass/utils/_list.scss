@@ -1,0 +1,22 @@
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.list-link {
+    display: block;
+    text-decoration: none;
+
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        box-shadow: 0px 1px 1px var(--shadow-list-link),
+            0px 4px 4px var(--shadow-list-linkk),
+            1px 4px 6px var(--shadow-list-linkkk);
+    }
+}

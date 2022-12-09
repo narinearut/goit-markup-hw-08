@@ -1,0 +1,168 @@
+/* header */
+header {
+    border-bottom: 1px solid #ECECEC;
+    ;
+}
+
+/* Main-nav */
+.main-nav {
+    display: flex;
+    align-items: center;
+}
+
+/* Logo */
+
+.link,
+.main-nav__logo {
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+
+.main-nav__logo,
+.web {
+    display: inline-block;
+
+    color: var(--accent-color);
+    font-family: 'Raleway', sans-serif;
+
+    @include font (700, 26px, 1.2, null);
+
+}
+
+
+.main-nav__logo {
+    color: var(--black-logo);
+
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-right: 93px;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+        color: var(--accent-color);
+    }
+}
+
+
+
+/* Site nav */
+.site-nav {
+    display: flex;
+
+    .item+.item {
+        margin-left: 50px;
+    }
+
+    .link.current {
+        color: var(--accent-color);
+        position: relative;
+
+    }
+
+    .link {
+        display: block;
+        color: var(--primary-text-color);
+
+        @include font(500, 14px, 1.14, 0.02em);
+
+        padding-top: 32px;
+        padding-bottom: 32px;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    }
+
+    .link:hover,
+    .link:focus {
+        color: var(--accent-color);
+    }
+
+}
+
+.current::after {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+}
+
+
+/* Auth nav */
+
+.auth-nav {
+    display: flex;
+    margin-left: auto;
+    align-items: baseline;
+    justify-content: baseline;
+
+    .link {
+        display: block;
+        color: var(--secondary-text-color);
+
+        @include font(500, 14px, 1.14, 0.02em);
+
+
+        padding-top: 32px;
+        padding-bottom: 32px;
+
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .item+.item {
+        margin-left: 50px;
+    }
+
+    .link:hover,
+    .link:focus {
+        color: var(--accent-color);
+    }
+
+}
+
+
+.auth-nav__svg-tel {
+    fill: var(--secondary-text-color);
+    margin-right: 10px;
+
+    &:hover,
+    &:focus {
+        fill: var(--accent-color);
+    }
+.auth-nav__tel:hover &,
+.auth-nav__tel:focus & {
+    fill: var(--accent-color);
+}
+
+}
+
+
+
+
+.auth-nav__tel-item {
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+}
+
+.auth-nav__svg-mail {
+    fill: var(--secondary-text-color);
+    margin-right: 10px;
+
+    &:hover,
+    &:focus {
+        fill: var(--accent-color);
+    }
+    
+    .auth-nav__mail:hover &,
+.auth-nav__mail:focus & {
+    fill: var(--accent-color);
+}
+}
+
+
