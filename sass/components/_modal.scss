@@ -8,9 +8,9 @@
 }
 
 .modal {
+width: 450px;
+min-height: 609px;
 
-    width: 528px;
-    min-height: 581px;
     background-color: var(--white-text);
     box-shadow: 0px 1px 3px var(--shadow-filterrr), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -21,6 +21,16 @@
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     padding: 40px;
+
+                @media screen and(min-width: 480px) {}
+                
+                    @media screen and(min-width: 768px) {
+                    }
+                
+                    @media screen and(min-width: 1200px) {
+                    width: 528px;
+    min-height: 581px;
+                    }
 
     .backdrop.is-hidden {
         transform: translate(-50%, -50%) scaleY(1.5) rotate(-360deg);
@@ -151,15 +161,32 @@
 .check-text {
     display: flex;
 
-    @include font(null, 14px, 1.14, null);
-
-
-    margin-left: 12px;
-
+    // @include font(null, 14px, 1.14, null);
+    @include font(null, 12px, 1.17, null);
     color: var(--secondary-text-color);
-    display: flex;
-    align-items: center;
+
     margin-bottom: 30px;
+
+        @media screen and (min-width:480px) {
+            }
+        
+            @media screen and (min-width: 768px) {
+                    margin-left: 12px;
+                    
+                        color: var(--secondary-text-color);
+                        display: flex;
+                        align-items: center;
+            }
+        
+            @media screen and (min-width: 1200px) {
+                    margin-left: 12px;
+                    
+                        color: var(--secondary-text-color);
+                        display: flex;
+                        align-items: center;
+
+                            @include font(null, 14px, 1.14, null);
+            }
 
     span {
 
@@ -192,9 +219,14 @@
 
 .send {
     display: block;
-    margin-left: 124px;
-    margin-right: 124px;
+    margin-left: auto;
+    margin-right: auto;
     width: 200px;
     height: 50px;
 
+}
+
+.police__mob {
+    display: flex;
+    flex-direction: row;
 }

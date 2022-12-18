@@ -1,15 +1,63 @@
 .feature {
     color: var(--primary-text-color);
-    padding-top: 94px;
+                padding-top: 60px;
+                    padding-bottom: 60px;
+    // padding-top: 94px;
+        @media screen and (min-width: 480px) {
+            padding-top: 60px;
+            padding-bottom: 60px;
+            }
+        
+            @media screen and (min-width: 768px) {
+
+            }
+        
+            @media screen and (min-width: 1200px) {
+                padding-top: 94px;
+                padding-bottom: 0;
+            }
+    
+}
+
+.feature__list {
+
+    @media screen and (min-width: 480px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        }
+    
+        @media screen and (min-width: 768px) {
+                        align-items: start;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            align-items: start;
+        }
 }
 
 
 .feature__item {
 
-    width: 270px;
+    @media screen and (min-width: 480px) {
+        width: 450px;
+        margin-bottom: 30px;
+    }
 
-    .list &+& {
-        margin-left: 30px;
+    @media screen and (min-width: 768px) {
+        width: 354px;
+        &:nth-child(2n) {
+            margin-left: 30px;
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+        margin-right: 0;
+        .list &+& {
+            margin-left: 30px;
+        }
     }
 }
 
@@ -21,6 +69,21 @@
     @include font(null, 14px, 1.14, null);
 
     text-transform: uppercase;
+        text-align: center;
+
+    @media screen and (min-width: 480px) {
+
+        margin-top: 30px;
+
+    }
+
+    @media screen and (min-width: 768px) {
+        text-align: left;
+    }
+
+    @media screen and (min-width: 1200px) {
+        
+    }
 }
 
 .feature__text {
@@ -34,10 +97,26 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 270px;
-    height: 120px;
+
+
     background-color: #F5F4FA;
     margin-bottom: 30px;
+
+    // width: 270px;
+    // height: 120px;
+    @media screen and (min-width: 480px) {
+        width: 450px;
+        height: 120px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+    }
+
 }
 
 .feature__icon {

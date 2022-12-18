@@ -5,9 +5,10 @@
 
     text-align: center;
     text-transform: uppercase;
+    @include font(900, 26px, 1.62, 0.06em);
 
     // @include font(900, 44px, 1.36, 0.06em);
-    
+
     @media screen and (min-width:480px) {
         @include font(900, 26px, 1.62, 0.06em);
     }
@@ -27,6 +28,7 @@
     margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
+    width: 360px;
 
     // width: 696px;
 
@@ -37,14 +39,18 @@
     @media screen and (min-width: 768px) {
         
     }
-    
+
     @media screen and (min-width: 1200px) {
         width: 696px;
     }
 }
 
 .hero {
-    max-width: 1600px;
+    width: 1200px;
+    width: 480px;
+    height: 400px;
+    padding-top: 118px;
+    padding-bottom: 118px;
 
 
 
@@ -54,28 +60,47 @@
     margin-left: auto;
     margin-right: auto;
 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../images/bgc-main.jpg);
+        url(../images/bgc-main-mob.jpg);
+
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                                url(../images/bgc-main-mob-2x.jpg);
+                }
+            
 
     // height: 600px;
     // padding-top: 200px;
     // padding-bottom: 200px;
 
     @media screen and (min-width: 480px) {
-        width: 480px;
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url(../images/bgc-main-tab.jpg);
+        width: 100%;
         height: 400px;
         padding-top: 118px;
         padding-bottom: 118px;
     }
-        @media screen and (min-width: 768px) {
-            width: 768px;
-        }
-    
-        @media screen and (min-width: 1200px) {
-        width: 1200px;
+
+    @media screen and (min-width: 768px) {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url(../images/bgc-main-tab.jpg);
+        width: 100%;
+    }
+
+    @media screen and (min-width: 1200px) {
+        max-width: 1600px;
         height: 600px;
         padding-top: 200px;
         padding-bottom: 200px;
-        }
-    
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url(../images/bgc-main.jpg);
+    }
+
 }

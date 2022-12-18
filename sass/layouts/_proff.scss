@@ -1,33 +1,72 @@
-.proff{}
+.proff {
 
-.proff__title {}
-
-.proff__list{}
-
-
-.proff__img {
-    position: relative;
-    .list &+& {
-    margin-left: 30px;
-}
+        display: none;
+        
+    @media screen and(min-width: 480px) { 
+    display: none;
 }
 
-.proff__text {
-    position: absolute;
-    bottom: 0%;
 
-@include font(700, 14px, 1.14, null);
 
-    text-align: center;
-    text-transform: uppercase;
+    @media screen and(min-width: 768px) {
+        display: none;
+    }
 
-    color: var(--white-text);
-    background-color: var(--bgc-list-text);
-    width: 370px;
-    height: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @media screen and(min-width: 1200px) {
+        display: block;
 
+    }
+
+    .proff__title {}
+
+    .proff__list {
+
+        @media screen and(min-width: 1200px) {}
+
+    }
+
+
+    .proff__img {
+        &:nth-child(n + 2) {
+            margin-left: 30px;
+        }
+
+        // .list &+& {
+
+        //     margin-left: 30px;
+
+        //     @media screen and(min-width: 1200px) {
+        //         margin-left: 30px;
+        //     }
+        // }
+
+        @media screen and(min-width: 1200px) {
+            position: relative;
+        }
+
+    }
+
+    .proff__text {
+
+        @media screen and(min-width: 1200px) {
+            position: absolute;
+            bottom: 0%;
+
+            @include font(700, 14px, 1.14, null);
+
+            text-align: center;
+            text-transform: uppercase;
+
+            color: var(--white-text);
+            background-color: var(--bgc-list-text);
+            width: 370px;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+    } 
 
 }
