@@ -231,12 +231,11 @@ body {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  min-width: 480px;
   outline: 2px solid tomato;
 }
 @media screen and (min-width: 480px) {
   .container {
-    min-width: 480px;
+    width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -251,35 +250,19 @@ body {
 }
 
 .section {
-  width: 480px;
   padding-top: 60px;
   padding-bottom: 60px;
-  margin-left: auto;
-  margin-right: auto;
 }
 @media screen and (min-width: 480px) {
   .section {
-    min-width: 480px;
     padding-top: 60px;
     padding-bottom: 60px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-@media screen and (min-width: 768px) {
-  .section {
-    min-width: 768px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 @media screen and (min-width: 1200px) {
   .section {
-    min-width: 1200px;
     padding-top: 94px;
     padding-bottom: 94px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
@@ -517,7 +500,6 @@ header {
 .main-nav {
   display: flex;
   align-items: center;
-  width: 480px;
 }
 @media screen and (min-width: 480px) {
   .main-nav {
@@ -968,7 +950,7 @@ header {
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
-  width: 360px;
+  max-width: 320px;
 }
 @media screen and (min-width: 480px) {
   .hero__title {
@@ -982,8 +964,6 @@ header {
 }
 
 .hero {
-  width: 1200px;
-  width: 480px;
   height: 400px;
   padding-top: 118px;
   padding-bottom: 118px;
@@ -1041,7 +1021,7 @@ header {
 @media screen and (min-width: 1200px) {
   .feature {
     padding-top: 94px;
-    padding-bottom: 0;
+    padding-bottom: 94px;
   }
 }
 
@@ -1063,6 +1043,9 @@ header {
   }
 }
 
+.feature__item:not(:last-child) {
+  margin-bottom: 30px;
+}
 @media screen and (min-width: 480px) {
   .feature__item {
     width: 450px;
@@ -1157,6 +1140,7 @@ header {
 @media screen and (min-width: 1200px) {
   .proff {
     display: block;
+    padding-bottom: 94px;
   }
 }
 .proff .proff__img:nth-child(n+2) {
@@ -1470,7 +1454,6 @@ header {
 
 .input-subscribe {
   color: var(--white-text);
-  width: 450px;
   height: 50px;
   background-color: transparent;
   border: 1px solid var(--sunscribe-shadow);
@@ -1540,7 +1523,6 @@ header {
   background-color: var(--primary-bgc);
   padding-top: 60px;
   padding-bottom: 60px;
-  width: 480px;
   margin-left: auto;
   margin-right: auto;
 }

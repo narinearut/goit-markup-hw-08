@@ -1,22 +1,20 @@
 .feature {
     color: var(--primary-text-color);
-                padding-top: 60px;
-                    padding-bottom: 60px;
-    // padding-top: 94px;
-        @media screen and (min-width: 480px) {
-            padding-top: 60px;
-            padding-bottom: 60px;
-            }
-        
-            @media screen and (min-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
 
-            }
-        
-            @media screen and (min-width: 1200px) {
-                padding-top: 94px;
-                padding-bottom: 0;
-            }
-    
+    // padding-top: 94px;
+    @media screen and (min-width: 480px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    @media screen and (min-width: 768px) {}
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
 
 .feature__list {
@@ -26,19 +24,22 @@
         align-items: center;
         justify-content: center;
 
-        }
-    
-        @media screen and (min-width: 768px) {
-                        align-items: start;
-        }
-    
-        @media screen and (min-width: 1200px) {
-            align-items: start;
-        }
+    }
+
+    @media screen and (min-width: 768px) {
+        align-items: start;
+    }
+
+    @media screen and (min-width: 1200px) {
+        align-items: start;
+    }
 }
 
 
 .feature__item {
+    &:not(:last-child) {
+        margin-bottom: 30px;
+    }
 
     @media screen and (min-width: 480px) {
         width: 450px;
@@ -47,6 +48,7 @@
 
     @media screen and (min-width: 768px) {
         width: 354px;
+
         &:nth-child(2n) {
             margin-left: 30px;
         }
@@ -55,6 +57,7 @@
     @media screen and (min-width: 1200px) {
         width: 270px;
         margin-right: 0;
+
         .list &+& {
             margin-left: 30px;
         }
@@ -69,7 +72,7 @@
     @include font(null, 14px, 1.14, null);
 
     text-transform: uppercase;
-        text-align: center;
+    text-align: center;
 
     @media screen and (min-width: 480px) {
 
@@ -81,9 +84,7 @@
         text-align: left;
     }
 
-    @media screen and (min-width: 1200px) {
-        
-    }
+    @media screen and (min-width: 1200px) {}
 }
 
 .feature__text {
