@@ -1,12 +1,10 @@
 .proff {
 
-        display: none;
-        
-    @media screen and(min-width: 480px) { 
     display: none;
-}
 
-
+    @media screen and(min-width: 480px) {
+        display: none;
+    }
 
     @media screen and(min-width: 768px) {
         display: none;
@@ -15,8 +13,9 @@
     @media screen and(min-width: 1200px) {
         display: block;
         padding-bottom: 94px;
-
     }
+
+
 
     .proff__title {}
 
@@ -68,6 +67,6 @@
 
         }
 
-    } 
+    }
 
 }
