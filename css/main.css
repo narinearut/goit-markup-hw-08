@@ -1074,6 +1074,9 @@ header {
     margin-right: 0;
     margin-bottom: 0;
   }
+  .feature__item:not(:last-child) {
+    margin-bottom: 0;
+  }
   .list .feature__item + .feature__item {
     margin-left: 30px;
   }
