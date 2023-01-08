@@ -25,8 +25,8 @@
 
             <nav>
                 <ul class="site-nav list">
-                    <li class="item"><a href="./index.html" class="link current">Студія</a></li>
-                    <li class="item"><a href="./portfolio.html" class="link">Портфоліо</a></li>
+                    <li class="item"><a href="./index.html" class="link ">Студія</a></li>
+                    <li class="item"><a href="./portfolio.html" class="link current">Портфоліо</a></li>
                     <li class="item"><a href="" class="link">Контакти</a></li>
                 </ul>
             </nav>
@@ -57,7 +57,8 @@
                     <nav>
                         <ul class="mob__site-nav list">
                             <li class="item"><a href="./index.html" class="link">Студія</a></li>
-                            <li class="item"><a href="./portfolio.html" class="link current__mob">Портфоліо</a></li>
+                            <li class="item"><a href="./portfolio.html" class="link current current__mob">Портфоліо</a>
+                            </li>
                             <li class="item"><a href="" class="link">Контакти</a></li>
                         </ul>
                     </nav>
@@ -102,7 +103,17 @@
 
                     <li class="list card"><a href="#" class="list-link">
                             <div class="box-wrap">
-                                <img src="./images/web-site.jpg" alt="комп" width="370">
+                                <picture>
+                                    <source srcset="./images/web-site.jpg 1x, ./images/web-site-2x.jpg 2x"
+                                        media="(min-width: 1200px)" />
+                                    <source srcset="./images/web-site-tab.jpg 1x, ./images/web-site-tab-2x.jpg 2x"
+                                        media="(min-width: 768px)" />
+                                    <source srcset="./images/web-site-mob.jpg 1x, ./images/web-site-mob-2x.jpg 2x"
+                                        media="(min-width: 480px)" />
+                                </picture>
+
+                                <img src="./images/web-site.jpg" alt="комп" width="450" class="card__img" />
+
                                 <p class="text-card">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу
                                     та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію
                                     чи приватну особу.</p>
@@ -117,7 +128,16 @@
                     </li>
                     <li class="list card"><a href="#" class="list-link">
                             <div class="box-wrap">
-                                <img src="./images/desing.jpg" alt="макет" width="370">
+                                <picture>
+                                    <source srcset="./images/desing.jpg 1x, ./images/desing-2x.jpg 2x"
+                                        media="(min-width: 1200px)" />
+                                    <source srcset="./images/desing-tab.jpg 1x, ./images/desing-tab-2x.jpg 2x"
+                                        media="(min-width: 768px)" />
+                                    <source srcset="./images/desing-mob.jpg 1x, ./images/desing-mob-2x.jpg 2x"
+                                        media="(min-width: 480px)" />
+                                </picture>
+
+                                <img src="./images/desing.jpg" alt="макет" width="450" class="card__img">
                                 <p class="text-card">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу
                                     та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію
                                     чи приватну особу.</p>
@@ -132,7 +152,15 @@
                     </li>
                     <li class="list card"><a href="#" class="list-link">
                             <div class="box-wrap">
-                                <img src="./images/app.jpg" alt="додаток" width="370">
+                                <picture>
+                                    <source srcset="./images/app.jpg 1x, ./images/app-2x.jpg 2x"
+                                        media="(min-width: 1200px)" />
+                                    <source srcset="./images/app-tab.jpg 1x, ./images/app-tab-2x.jpg 2x"
+                                        media="(min-width: 768px)" />
+                                    <source srcset="./images/app-mob.jpg 1x, ./images/app-mob-2x.jpg 2x"
+                                        media="(min-width: 480px)" />
+                                </picture>
+                                <img src="./images/app.jpg" alt="додаток" width="450" class="card__img">
                                 <p class="text-card">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу
                                     та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію
                                     чи приватну особу.</p>
@@ -147,7 +175,15 @@
                     </li>
                     <li class="list card"><a href="#" class="list-link">
                             <div class="box-wrap">
-                                <img src="./images/marketing.jpg" alt="маркетинг" width="370">
+                                <picture>
+                                    <source srcset="./images/marketing.jpg 1x, ./images/marketing-2x.jpg 2x"
+                                        media="(min-width: 1200px)" />
+                                    <source srcset="./images/marketing-tab.jpg 1x, ./images/marketing-tab-2x.jpg 2x"
+                                        media="(min-width: 768px)" />
+                                    <source srcset="./images/marketing-mob.jpg 1x, ./images/marketing-mob-2x.jpg 2x"
+                                        media="(min-width: 480px)" />
+                                </picture>
+                                <img src="./images/marketing.jpg" alt="маркетинг" width="450" class="card__img">
                                 <p class="text-card">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу
                                     та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію
                                     чи приватну особу.</p>
@@ -162,7 +198,15 @@
                     </li>
                     <li class="list card"><a href="#" class="list-link">
                             <div class="box-wrap">
-                                <img src="./images/boxes.jpg" alt="бокси" width="370">
+                                <picture>
+                                    <source srcset="./images/boxes.jpg 1x, ./images/boxes-2x.jpg 2x"
+                                        media="(min-width: 1200px)" />
+                                    <source srcset="./images/boxes-tab.jpg 1x, ./images/boxes-tab-2x.jpg 2x"
+                                        media="(min-width: 768px)" />
+                                    <source srcset="./images/boxes-mob.jpg 1x, ./images/boxes-mob-2x.jpg 2x"
+                                        media="(min-width: 480px)" />
+                                </picture>
+                                <img src="./images/boxes.jpg" alt="бокси" width="450" class="card__img">
                                 <p class="text-card">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу
                                     та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію
                                     чи приватну особу.</p>
@@ -177,7 +221,15 @@
                     </li>
                     <li class="list card"><a href="#" class="list-link">
                             <div class="box-wrap">
-                                <img src="./images/mac.jpg" alt="мак" width="370">
+                                <picture>
+                                    <source srcset="./images/mac.jpg 1x, ./images/mac-2x.jpg 2x"
+                                        media="(min-width: 1200px)" />
+                                    <source srcset="./images/mac-tab.jpg 1x, ./images/mac-tab-2x.jpg 2x"
+                                        media="(min-width: 768px)" />
+                                    <source srcset="./images/mac-mob.jpg 1x, ./images/mac-mob-2x.jpg 2x"
+                                        media="(min-width: 480px)" />
+                                </picture>
+                                <img src="./images/mac.jpg" alt="мак" width="450" class="card__img">
                                 <p class="text-card">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу
                                     та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію
                                     чи приватну особу.</p>
@@ -192,7 +244,15 @@
                     </li>
                     <li class="list card"><a href="#" class="list-link">
                             <div class="box-wrap">
-                                <img src="./images/magazine.jpg" alt="журнал" width="370">
+                                <picture>
+                                    <source srcset="./images/magazine.jpg 1x, ./images/magazine-2x.jpg 2x"
+                                        media="(min-width: 1200px)" />
+                                    <source srcset="./images/magazine-tab.jpg 1x, ./images/magazine-tab-2x.jpg 2x"
+                                        media="(min-width: 768px)" />
+                                    <source srcset="./images/magazine-mob.jpg 1x, ./images/magazine-mob-2x.jpg 2x"
+                                        media="(min-width: 480px)" />
+                                </picture>
+                                <img src="./images/magazine.jpg" alt="журнал" width="450" class="card__img">
                                 <p class="text-card">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу
                                     та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію
                                     чи приватну особу.</p>
@@ -207,7 +267,15 @@
                     </li>
                     <li class="list card"><a href="#" class="list-link">
                             <div class="box-wrap">
-                                <img src="./images/lab.jpg" alt="проект" width="370">
+                                <picture>
+                                    <source srcset="./images/lab.jpg 1x, ./images/lab-2x.jpg 2x"
+                                        media="(min-width: 1200px)" />
+                                    <source srcset="./images/lab-tab.jpg 1x, ./images/lab-tab-2x.jpg 2x"
+                                        media="(min-width: 768px)" />
+                                    <source srcset="./images/lab-mob.jpg 1x, ./images/lab-mob-2x.jpg 2x"
+                                        media="(min-width: 480px)" />
+                                </picture>
+                                <img src="./images/lab.jpg" alt="проект" width="450" class="card__img">
                                 <p class="text-card">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу
                                     та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію
                                     чи приватну особу.</p>
@@ -222,7 +290,15 @@
                     </li>
                     <li class="list card"><a href="#" class="list-link">
                             <div class="box-wrap">
-                                <img src="./images/business.jpg" alt="робота" width="370">
+                                <picture>
+                                    <source srcset="./images/business.jpg 1x, ./images/business-2x.jpg 2x"
+                                        media="(min-width: 1200px)" />
+                                    <source srcset="./images/business-tab.jpg 1x, ./images/business-tab-2x.jpg 2x"
+                                        media="(min-width: 768px)" />
+                                    <source srcset="./images/business-mob.jpg 1x, ./images/business-mob-2x.jpg 2x"
+                                        media="(min-width: 480px)" />
+                                </picture>
+                                <img src="./images/business.jpg" alt="робота" width="450" class="card__img">
                                 <p class="text-card">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу
                                     та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію
                                     чи приватну особу.</p>
