@@ -1356,26 +1356,27 @@ header {
   gap: 30px;
 }
 
-.card {
-  width: 354px;
+.card:hover .text-card {
+  transform: translateY(0);
+}
+
+.card__img {
+  width: 450px;
 }
 @media screen and (min-width: 480px) {
-  .card {
-    width: 354px;
+  .card__img {
+    width: 450px;
   }
 }
 @media screen and (min-width: 768px) {
-  .card {
+  .card__img {
     width: 354px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .card {
+  .card__img {
     width: 370px;
   }
-}
-.card:hover .text-card {
-  transform: translateY(0);
 }
 
 .img-list {
@@ -1385,6 +1386,7 @@ header {
 @media screen and (min-width: 768px) {
   .img-list {
     flex-grow: 1;
+    width: 354px;
   }
 }
 .description {
@@ -1394,6 +1396,16 @@ header {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+}
+@media screen and (min-width: 768px) {
+  .description {
+    width: 304px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .description {
+    width: 320px;
+  }
 }
 
 .type {
